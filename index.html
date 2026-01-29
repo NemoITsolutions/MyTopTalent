@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)file:///C:/Users/NS3064-IMRAN/Downloads/bench-portal-modern.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available IT Talent | Nemo IT Solutions </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link href="./Available IT Talent _ Nemo IT Solutions_files/css2" rel="stylesheet">
+    <style>
+        * { font-family: 'Plus Jakarta Sans', sans-serif; }
+        
+        /* Animated gradient background */
+        .gradient-bg {
+            background: #000000;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        .gradient-bg::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(120, 0, 255, 0.06) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.06) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(255, 0, 128, 0.04) 0%, transparent 40%);
+            animation: float 20s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(2%, 2%) rotate(1deg); }
+            66% { transform: translate(-1%, 1%) rotate(-1deg); }
+        }
+        
+        /* Glassmorphism */
+        .glass {
+            background: rgba(30, 25, 50, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        
+        .glass-card {
+            background: linear-gradient(165deg, 
+                rgba(75, 60, 120, 0.5) 0%, 
+                rgba(50, 40, 90, 0.6) 30%,
+                rgba(35, 28, 70, 0.7) 70%,
+                rgba(25, 20, 55, 0.8) 100%);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(139, 92, 246, 0.25);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 
+                0 4px 30px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        }
+        
+        .glass-card:hover {
+            background: linear-gradient(165deg, 
+                rgba(95, 75, 145, 0.6) 0%, 
+                rgba(65, 52, 110, 0.7) 30%,
+                rgba(45, 36, 85, 0.8) 70%,
+                rgba(35, 28, 70, 0.9) 100%);
+            border-color: rgba(167, 139, 250, 0.5);
+            transform: translateY(-8px);
+            box-shadow: 
+                0 25px 60px rgba(0, 0, 0, 0.6),
+                0 0 100px rgba(139, 92, 246, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Modal styles */
+        .modal-left-panel {
+            background: linear-gradient(180deg, 
+                rgba(50, 40, 85, 0.98) 0%, 
+                rgba(35, 28, 65, 0.99) 50%,
+                rgba(25, 20, 50, 1) 100%);
+        }
+        
+        .modal-right-panel {
+            background: linear-gradient(180deg, rgba(10, 8, 18, 0.98) 0%, rgba(5, 4, 12, 0.99) 100%);
+        }
+        
+        /* Glow effects */
+        .glow-purple { box-shadow: 0 0 30px rgba(147, 51, 234, 0.3); }
+        .glow-cyan { box-shadow: 0 0 30px rgba(6, 182, 212, 0.3); }
+        .glow-pink { box-shadow: 0 0 30px rgba(236, 72, 153, 0.3); }
+        
+        /* Gradient text */
+        .gradient-text {
+            background: linear-gradient(135deg, #fff 0%, #a78bfa 50%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Modern button */
+        .btn-modern {
+            background: linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-modern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .btn-modern:hover::before {
+            left: 100%;
+        }
+        
+        .btn-modern:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+        }
+        
+        /* Pill badge */
+        .pill {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Tech badge colors */
+        .tech-java { background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); }
+        .tech-python { background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%); }
+        .tech-react { background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%); }
+        .tech-dotnet { background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); }
+        .tech-qa { background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); }
+        .tech-devops { background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%); }
+        .tech-data { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); }
+        .tech-default { background: linear-gradient(135deg, #64748b 0%, #475569 100%); }
+        
+        /* Pulse animation */
+        .pulse-dot {
+            animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+        }
+        
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+        
+        /* Document tabs */
+        .doc-tab {
+            transition: all 0.3s ease;
+            background: rgba(40, 40, 70, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .doc-tab.active {
+            background: linear-gradient(135deg, #6d28d9 0%, #4f46e5 100%);
+            border-color: rgba(139, 92, 246, 0.5);
+            box-shadow: 0 4px 15px rgba(109, 40, 217, 0.4);
+        }
+        
+        .doc-tab:not(.active):hover {
+            background: rgba(60, 60, 100, 0.7);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Modal info cards */
+        .modal-info-card {
+            background: rgba(50, 50, 80, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        
+        /* Filter button */
+        .filter-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn.active {
+            background: linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%);
+            box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4);
+        }
+        
+        .filter-btn:not(.active):hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: rgba(0,0,0,0.2); }
+        ::-webkit-scrollbar-thumb { background: rgba(124, 58, 237, 0.5); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(124, 58, 237, 0.7); }
+        
+        /* Input focus */
+        .input-modern:focus {
+            border-color: #7c3aed;
+            box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+        }
+        
+        /* Hot badge */
+        .hot-badge {
+            background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+            animation: badge-glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes badge-glow {
+            0% { box-shadow: 0 0 10px rgba(245, 158, 11, 0.5); }
+            100% { box-shadow: 0 0 20px rgba(249, 115, 22, 0.8); }
+        }
+        
+        /* Relative z-index for content */
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.left-4{left:1rem}.top-0{top:0px}.top-1\/2{top:50%}.right-4{right:1rem}.top-4{top:1rem}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-12{margin-top:3rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mb-3{margin-bottom:0.75rem}.ml-auto{margin-left:auto}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-2{height:0.5rem}.h-40{height:10rem}.h-5{height:1.25rem}.h-\[90vh\]{height:90vh}.h-12{height:3rem}.h-16{height:4rem}.h-full{height:100%}.w-10{width:2.5rem}.w-2{width:0.5rem}.w-5{width:1.25rem}.w-full{width:100%}.w-12{width:3rem}.w-16{width:4rem}.min-w-0{min-width:0px}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.max-w-lg{max-width:32rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.resize-none{resize:none}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:0.75rem}.rounded-lg{border-radius:0.5rem}.border{border-width:1px}.border-0{border-width:0px}.border-b{border-bottom-width:1px}.border-l-4{border-left-width:4px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-cyan-500{--tw-border-opacity:1;border-color:rgb(6 182 212 / var(--tw-border-opacity, 1))}.border-red-500\/30{border-color:rgb(239 68 68 / 0.3)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-white\/5{border-color:rgb(255 255 255 / 0.05)}.bg-black\/30{background-color:rgb(0 0 0 / 0.3)}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-black\/85{background-color:rgb(0 0 0 / 0.85)}.bg-green-400{--tw-bg-opacity:1;background-color:rgb(74 222 128 / var(--tw-bg-opacity, 1))}.bg-green-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-red-600\/30{background-color:rgb(220 38 38 / 0.3)}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-yellow-600{--tw-bg-opacity:1;background-color:rgb(202 138 4 / var(--tw-bg-opacity, 1))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-purple-600\/20{--tw-gradient-from:rgb(147 51 234 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(147 51 234 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-pink-600\/20{--tw-gradient-to:rgb(219 39 119 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(219 39 119 / 0.2) var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-cyan-600\/20{--tw-gradient-to:rgb(8 145 178 / 0.2) var(--tw-gradient-to-position)}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-8{padding-top:2rem;padding-bottom:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.pl-12{padding-left:3rem}.pr-6{padding-right:1.5rem}.pr-16{padding-right:4rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-5xl{font-size:3rem;line-height:1}.text-6xl{font-size:3.75rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.text-cyan-400{--tw-text-opacity:1;color:rgb(34 211 238 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-red-300{--tw-text-opacity:1;color:rgb(252 165 165 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.placeholder-gray-500::placeholder{--tw-placeholder-opacity:1;color:rgb(107 114 128 / var(--tw-placeholder-opacity, 1))}.accent-purple-500{accent-color:#a855f7}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-green-500:hover{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.hover\:bg-red-600:hover{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/10:hover{background-color:rgb(255 255 255 / 0.1)}.hover\:bg-yellow-500:hover{--tw-bg-opacity:1;background-color:rgb(234 179 8 / var(--tw-bg-opacity, 1))}.hover\:bg-red-500\/30:hover{background-color:rgb(239 68 68 / 0.3)}.hover\:text-purple-300:hover{--tw-text-opacity:1;color:rgb(216 180 254 / var(--tw-text-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 640px){.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:col-span-2{grid-column:span 2 / span 2}.md\:col-span-3{grid-column:span 3 / span 3}.md\:w-96{width:24rem}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:justify-between{justify-content:space-between}.md\:p-12{padding:3rem}}@media (min-width: 1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
+<body class="gradient-bg text-white">
+
+    <!-- ============== PUBLIC VIEW ============== -->
+    <div id="publicView" class="content-wrapper">
+        <!-- Header -->
+        <header class="glass sticky top-0 z-20">
+            <div class="max-w-7xl mx-auto px-6 py-5">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <div>
+                        <h1 class="text-2xl font-extrabold text-white">Nemo IT Solutions Inc</h1>
+                        <p class="text-gray-400 text-sm">Talent Pool</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="pill px-4 py-2 rounded-full flex items-center gap-2">
+                            <span class="w-2 h-2 bg-green-400 rounded-full pulse-dot"></span>
+                            <span id="candidateCount" class="text-green-400 font-semibold text-sm">4 Available</span>
+                        </div>
+                        <div class="pill px-4 py-2 rounded-full">
+                            <span class="text-gray-400 text-sm">Updated: <span id="lastUpdated" class="text-white">Jan 2026</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Search & Filters -->
+        <div class="max-w-7xl mx-auto px-6 py-8">
+            <!-- Search Bar -->
+            <div class="mb-8">
+                <div class="relative max-w-xl">
+                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-xl">🔍</span>
+                    <input type="text" id="searchInput" placeholder="Search by role or skills..." class="input-modern w-full pl-12 pr-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-white placeholder-gray-500 focus:outline-none transition-all text-lg">
+                </div>
+            </div>
+
+            <!-- Candidate Grid -->
+            <div id="candidateGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div onclick="openModal(1769463822177)" class="glass-card rounded-3xl p-6 cursor-pointer relative">
+                        <!-- Visa Badge - Top Right -->
+                        <div class="absolute top-4 right-4">
+                            <span class="px-3 py-1.5 rounded-full bg-blue-500 text-white text-xs font-semibold shadow-lg">H1B</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-16 h-16 rounded-2xl tech-java flex items-center justify-center text-white font-bold text-xl">
+                                AK
+                            </div>
+                            <div class="flex-1 min-w-0 pr-16">
+                                <h3 class="text-white font-bold text-lg truncate">Arun Kasturi</h3>
+                                <p class="text-gray-400">Full Stack Java Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">Java (8–17)</span><span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">Spring Boot</span><span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">Microservices Architecture</span><span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">REST API Development</span>
+                            <span class="pill px-3 py-1 rounded-full text-gray-400 text-xs">+17</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 text-sm mb-4">
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Experience</span>
+                                <span class="text-white font-semibold">10+ Years</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Rate</span>
+                                <span class="text-white font-bold text-lg">$75/hr</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Current Location</span>
+                                <span class="text-gray-300 text-sm">Charlotte, NC</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Relocation</span>
+                                <span class="text-cyan-400 text-sm">Open to Relocate</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 bg-green-400 rounded-full pulse-dot"></span>
+                                <span class="text-green-400 text-sm font-medium">Immediate</span>
+                            </div>
+                            <button class="btn-modern px-5 py-2 rounded-xl text-sm font-semibold text-white">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                
+                    <div onclick="openModal(1769464245471)" class="glass-card rounded-3xl p-6 cursor-pointer relative">
+                        <!-- Visa Badge - Top Right -->
+                        <div class="absolute top-4 right-4">
+                            <span class="px-3 py-1.5 rounded-full bg-blue-500 text-white text-xs font-semibold shadow-lg">H1B</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-16 h-16 rounded-2xl tech-java flex items-center justify-center text-white font-bold text-xl">
+                                RM
+                            </div>
+                            <div class="flex-1 min-w-0 pr-16">
+                                <h3 class="text-white font-bold text-lg truncate">Rajkumar MADASU</h3>
+                                <p class="text-gray-400">Lead Java Full Stack</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">Java (8–21)</span><span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">Spring Boot</span><span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">Microservices Architecture</span><span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">RESTful API Development</span>
+                            <span class="pill px-3 py-1 rounded-full text-gray-400 text-xs">+17</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 text-sm mb-4">
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Experience</span>
+                                <span class="text-white font-semibold">13+ Years</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Rate</span>
+                                <span class="text-white font-bold text-lg">$80/hr</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Current Location</span>
+                                <span class="text-gray-300 text-sm">Raleigh, NC</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Relocation</span>
+                                <span class="text-cyan-400 text-sm">Local Only</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 bg-green-400 rounded-full pulse-dot"></span>
+                                <span class="text-green-400 text-sm font-medium">Immediate</span>
+                            </div>
+                            <button class="btn-modern px-5 py-2 rounded-xl text-sm font-semibold text-white">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                
+                    <div onclick="openModal(1769464695474)" class="glass-card rounded-3xl p-6 cursor-pointer relative">
+                        <!-- Visa Badge - Top Right -->
+                        <div class="absolute top-4 right-4">
+                            <span class="px-3 py-1.5 rounded-full bg-blue-500 text-white text-xs font-semibold shadow-lg">H1B</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-16 h-16 rounded-2xl tech-python flex items-center justify-center text-white font-bold text-xl">
+                                SP
+                            </div>
+                            <div class="flex-1 min-w-0 pr-16">
+                                <h3 class="text-white font-bold text-lg truncate">Sai Priyanka GURAJADA</h3>
+                                <p class="text-gray-400">Python Full Stack Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">Python 3</span><span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">Django</span><span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">Flask</span><span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">FastAPI</span>
+                            <span class="pill px-3 py-1 rounded-full text-gray-400 text-xs">+19</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 text-sm mb-4">
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Experience</span>
+                                <span class="text-white font-semibold">11+ Years</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Rate</span>
+                                <span class="text-white font-bold text-lg">$75/hr</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Current Location</span>
+                                <span class="text-gray-300 text-sm">Austin, TX</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Relocation</span>
+                                <span class="text-cyan-400 text-sm">Remote Only</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 bg-green-400 rounded-full pulse-dot"></span>
+                                <span class="text-green-400 text-sm font-medium">Immediate</span>
+                            </div>
+                            <button class="btn-modern px-5 py-2 rounded-xl text-sm font-semibold text-white">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                
+                    <div onclick="openModal(1769464970706)" class="glass-card rounded-3xl p-6 cursor-pointer relative">
+                        <!-- Visa Badge - Top Right -->
+                        <div class="absolute top-4 right-4">
+                            <span class="px-3 py-1.5 rounded-full bg-blue-500 text-white text-xs font-semibold shadow-lg">H1B</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-16 h-16 rounded-2xl tech-data flex items-center justify-center text-white font-bold text-xl">
+                                NC
+                            </div>
+                            <div class="flex-1 min-w-0 pr-16">
+                                <h3 class="text-white font-bold text-lg truncate">Nagarjuna CHALASANI</h3>
+                                <p class="text-gray-400">Business Intelligence/Cognos Architect</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">Cognos 8.x Suite</span><span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">Cognos 10.x Suite</span><span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">Cognos 11.1.5</span><span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">11.0.5</span>
+                            <span class="pill px-3 py-1 rounded-full text-gray-400 text-xs">+11</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 text-sm mb-4">
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Experience</span>
+                                <span class="text-white font-semibold">14+ Years</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Rate</span>
+                                <span class="text-white font-bold text-lg">$110/hr</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Current Location</span>
+                                <span class="text-gray-300 text-sm">Plano, TX</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Relocation</span>
+                                <span class="text-cyan-400 text-sm">Remote Only</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 bg-green-400 rounded-full pulse-dot"></span>
+                                <span class="text-green-400 text-sm font-medium">Immediate</span>
+                            </div>
+                            <button class="btn-modern px-5 py-2 rounded-xl text-sm font-semibold text-white">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- No results -->
+            <div id="noResults" class="text-center py-20 hidden">
+                <p class="text-6xl mb-4">🔍</p>
+                <p class="text-gray-400 text-xl mb-4">No candidates match your search</p>
+                <button onclick="clearFilters()" class="text-purple-400 hover:text-purple-300 font-medium">
+                    Clear filters
+                </button>
+            </div>
+        </div>
+
+        <!-- Contact CTA -->
+        <div class="max-w-7xl mx-auto px-6 py-12">
+            <div class="glass rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-pink-600/20 to-cyan-600/20"></div>
+                <div class="relative z-10">
+                    <p class="text-gray-300 mb-4 text-lg max-w-xl mx-auto">Connect with top IT talent for your C2C requirements.</p>
+                    <p class="text-yellow-400 font-semibold mb-4">These are my own W2 candidates</p>
+                    <p class="text-2xl font-bold text-white mb-4">Imran Khan</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a id="ctaPhone" href="tel:2143966721" class="btn-modern px-8 py-4 rounded-2xl font-semibold text-white flex items-center justify-center gap-2"><span>📞</span> 214-396-6721</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="border-t border-white/5 mt-12">
+            <div class="max-w-7xl mx-auto px-6 py-8 text-center">
+                <p class="text-gray-500 text-sm">All candidates are C2C ready • Vetted</p>
+                <p class="text-gray-600 text-sm mt-2">© 2026 <span id="footerCompany">Nemo IT Solutions</span></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ============== ADMIN PANEL ============== -->
+    <div id="adminView" class="content-wrapper hidden">
+        <header class="glass border-b border-red-500/30 sticky top-0 z-20">
+            <div class="max-w-7xl mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h1 class="text-2xl font-bold text-red-400">🔐 Admin Panel</h1>
+                        <p class="text-gray-500 text-sm">Press <kbd class="px-2 py-1 glass rounded text-xs text-gray-300">Ctrl+Shift+A</kbd> to toggle</p>
+                    </div>
+                    <div class="flex gap-2 flex-wrap">
+                        <button onclick="exportData()" class="px-4 py-2 bg-green-600 hover:bg-green-500 rounded-xl font-medium transition-all">
+                            📥 Export
+                        </button>
+                        <button onclick="importData()" class="px-4 py-2 bg-yellow-600 hover:bg-yellow-500 rounded-xl font-medium transition-all">
+                            📤 Import
+                        </button>
+                        <button onclick="showPublicView()" class="px-4 py-2 glass hover:bg-white/10 rounded-xl font-medium transition-all">
+                            👁️ View Site
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="max-w-7xl mx-auto px-6 py-8">
+            <!-- Google Drive Help -->
+            <div class="glass rounded-2xl p-5 mb-6 border-l-4 border-cyan-500">
+                <h3 class="text-cyan-400 font-semibold mb-2">📁 How to Get Google Drive Links:</h3>
+                <ol class="text-gray-300 text-sm space-y-1 list-decimal list-inside">
+                    <li>Upload Resume PDF and Visa Copy to Google Drive</li>
+                    <li>Right-click → <strong class="text-white">Share</strong> → <strong class="text-white">Anyone with the link</strong></li>
+                    <li>Copy link and paste below</li>
+                </ol>
+            </div>
+
+            <!-- Settings -->
+            <div class="glass rounded-2xl p-6 mb-6">
+                <h2 class="text-lg font-bold mb-4">⚙️ Company Settings</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <label class="text-gray-400 text-sm block mb-1">Company Name</label>
+                        <input type="text" id="settingCompanyName" placeholder="Nemo" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="text-gray-400 text-sm block mb-1">Email</label>
+                        <input type="email" id="settingEmail" placeholder="imran@nemoitsolutions.com" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="text-gray-400 text-sm block mb-1">Phone</label>
+                        <input type="text" id="settingPhone" placeholder="214-396-6721" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all">
+                    </div>
+                </div>
+                <button onclick="saveSettings()" class="mt-4 btn-modern px-6 py-3 rounded-xl font-medium">
+                    💾 Save Settings
+                </button>
+            </div>
+
+            <!-- Add/Edit Form -->
+            <div class="glass rounded-2xl p-6 mb-6">
+                <h2 class="text-lg font-bold mb-4" id="formTitle">➕ Add New Candidate</h2>
+                <input type="hidden" id="editingId" value="">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div>
+                        <label class="text-gray-400 text-sm block mb-1">Full Name *</label>
+                        <input type="text" id="candName" placeholder="John Doe" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="text-gray-400 text-sm block mb-1">Role / Title *</label>
+                        <input type="text" id="candRole" placeholder="Senior Java Developer" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="text-gray-400 text-sm block mb-1">Primary Technology *</label>
+                        <select id="candPrimaryTech" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none transition-all">
+                            <option value="Java">☕ Java</option>
+                            <option value="Python">🐍 Python</option>
+                            <option value="React">⚛️ React</option>
+                            <option value=".NET">🔷 .NET</option>
+                            <option value="QA/Testing">🧪 QA/Testing</option>
+                            <option value="DevOps">🔧 DevOps</option>
+                            <option value="Data/BI">📊 Data/BI</option>
+                            <option value="Salesforce">☁️ Salesforce</option>
+                            <option value="SAP">🟦 SAP</option>
+                            <option value="Angular">🅰️ Angular</option>
+                            <option value="AWS">🌩️ AWS</option>
+                            <option value="Other">💻 Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-gray-400 text-sm block mb-1">Skills (comma-separated) *</label>
+                        <input type="text" id="candSkills" placeholder="Java, Spring Boot, AWS" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="text-gray-400 text-sm block mb-1">Visa Type *</label>
+                        <select id="candVisa" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none transition-all">
+                            <option value="Citizen">🟢 US Citizen</option>
+                            <option value="GC">🟢 Green Card</option>
+                            <option value="H1B">🔵 H1B</option>
+                            <option value="H1B Transfer">🔵 H1B Transfer</option>
+                            <option value="H4 EAD">🔵 H4 EAD</option>
+                            <option value="L1">🔵 L1</option>
+                            <option value="L2 EAD">🔵 L2 EAD</option>
+                            <option value="OPT">🟠 OPT</option>
+                            <option value="STEM OPT">🟣 STEM OPT</option>
+                            <option value="CPT">🟡 CPT</option>
+                            <option value="EB3">🟢 EB3</option>
+                            <option value="TN">🔵 TN Visa</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-gray-400 text-sm block mb-1">Hourly Rate *</label>
+                        <input type="text" id="candRate" placeholder="$65/hr" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="text-gray-400 text-sm block mb-1">Experience *</label>
+                        <input type="text" id="candExperience" placeholder="5+ years" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="text-gray-400 text-sm block mb-1">Current Location</label>
+                        <input type="text" id="candLocation" placeholder="Dallas, TX" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="text-gray-400 text-sm block mb-1">Relocation</label>
+                        <select id="candRelocation" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none transition-all">
+                            <option value="Open to Relocate">Open to Relocate</option>
+                            <option value="Remote Only">Remote Only</option>
+                            <option value="Remote Preferred">Remote Preferred</option>
+                            <option value="Local Only">Local Only</option>
+                            <option value="East Coast">East Coast</option>
+                            <option value="West Coast">West Coast</option>
+                            <option value="Midwest Only">Midwest Only</option>
+                            <option value="Texas Only">Texas Only</option>
+                            <option value="California Only">California Only</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-gray-400 text-sm block mb-1">Availability</label>
+                        <select id="candAvailability" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none transition-all">
+                            <option value="Immediate">Immediate</option>
+                            <option value="1 Week">1 Week Notice</option>
+                            <option value="2 Weeks">2 Weeks Notice</option>
+                            <option value="1 Month">1 Month Notice</option>
+                        </select>
+                    </div>
+                    <div class="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-gray-400 text-sm block mb-1">📄 Resume Link (Google Drive) *</label>
+                            <input type="url" id="candResumeLink" placeholder="https://drive.google.com/file/d/xxxxx/view" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all">
+                        </div>
+                        <div>
+                            <label class="text-gray-400 text-sm block mb-1">🪪 Visa Copy Link (Google Drive)</label>
+                            <input type="url" id="candVisaLink" placeholder="https://drive.google.com/file/d/xxxxx/view" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all">
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="checkbox" id="candHighlight" class="w-5 h-5 rounded bg-white/10 border-white/20 accent-purple-500">
+                            <span>⭐ Mark as HOT</span>
+                        </label>
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="text-gray-400 text-sm block mb-1">Summary</label>
+                        <input type="text" id="candSummary" placeholder="Brief description..." class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all">
+                    </div>
+                </div>
+                
+                <div class="flex gap-3 mt-6">
+                    <button onclick="saveCandidate()" class="btn-modern px-6 py-3 rounded-xl font-medium">
+                        💾 Save Candidate
+                    </button>
+                    <button onclick="clearForm()" class="glass px-6 py-3 rounded-xl font-medium hover:bg-white/10 transition-all">
+                        🔄 Clear
+                    </button>
+                </div>
+            </div>
+
+            <!-- Candidates List -->
+            <div class="glass rounded-2xl p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-lg font-bold">📋 Candidates (<span id="adminCandidateCount">4</span>)</h2>
+                    <button onclick="deleteAllCandidates()" class="px-4 py-2 bg-red-600/30 hover:bg-red-600 text-red-300 rounded-xl font-medium text-sm transition-all">
+                        🗑️ Delete All
+                    </button>
+                </div>
+                <div id="adminCandidateList" class="space-y-3">
+                    <div class="glass-card flex items-center gap-4 p-4 rounded-xl">
+                        <div class="w-12 h-12 rounded-full tech-java flex items-center justify-center text-white font-bold flex-shrink-0">
+                            AK
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-white font-semibold truncate">Arun Kasturi</h3>
+                                
+                            </div>
+                            <p class="text-gray-400 text-sm">Full Stack Java Developer • $75/hr</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="editCandidate(1769463822177)" class="p-2 glass rounded-lg hover:bg-white/10">✏️</button>
+                            <button onclick="deleteCandidate(1769463822177)" class="p-2 glass rounded-lg hover:bg-red-500/30">🗑️</button>
+                        </div>
+                    </div>
+                
+                    <div class="glass-card flex items-center gap-4 p-4 rounded-xl">
+                        <div class="w-12 h-12 rounded-full tech-java flex items-center justify-center text-white font-bold flex-shrink-0">
+                            RM
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-white font-semibold truncate">Rajkumar MADASU</h3>
+                                
+                            </div>
+                            <p class="text-gray-400 text-sm">Lead Java Full Stack • $80/hr</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="editCandidate(1769464245471)" class="p-2 glass rounded-lg hover:bg-white/10">✏️</button>
+                            <button onclick="deleteCandidate(1769464245471)" class="p-2 glass rounded-lg hover:bg-red-500/30">🗑️</button>
+                        </div>
+                    </div>
+                
+                    <div class="glass-card flex items-center gap-4 p-4 rounded-xl">
+                        <div class="w-12 h-12 rounded-full tech-python flex items-center justify-center text-white font-bold flex-shrink-0">
+                            SP
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-white font-semibold truncate">Sai Priyanka GURAJADA</h3>
+                                
+                            </div>
+                            <p class="text-gray-400 text-sm">Python Full Stack Developer • $75/hr</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="editCandidate(1769464695474)" class="p-2 glass rounded-lg hover:bg-white/10">✏️</button>
+                            <button onclick="deleteCandidate(1769464695474)" class="p-2 glass rounded-lg hover:bg-red-500/30">🗑️</button>
+                        </div>
+                    </div>
+                
+                    <div class="glass-card flex items-center gap-4 p-4 rounded-xl">
+                        <div class="w-12 h-12 rounded-full tech-data flex items-center justify-center text-white font-bold flex-shrink-0">
+                            NC
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-white font-semibold truncate">Nagarjuna CHALASANI</h3>
+                                <span class="text-yellow-400">⭐</span>
+                            </div>
+                            <p class="text-gray-400 text-sm">Business Intelligence/Cognos Architect • $110/hr</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="editCandidate(1769464970706)" class="p-2 glass rounded-lg hover:bg-white/10">✏️</button>
+                            <button onclick="deleteCandidate(1769464970706)" class="p-2 glass rounded-lg hover:bg-red-500/30">🗑️</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="noCandidates" class="text-center py-12 text-gray-500 hidden">
+                    <p class="text-5xl mb-4">📭</p>
+                    <p>No candidates yet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============== CANDIDATE MODAL ============== -->
+    <div id="modal" class="fixed inset-0 bg-black/85 backdrop-blur-sm flex items-center justify-center z-50 p-4 hidden">
+        <div class="rounded-3xl w-full max-w-6xl h-[90vh] flex flex-col md:flex-row overflow-hidden border border-white/10" onclick="event.stopPropagation()">
+            <!-- Left Panel -->
+            <div class="w-full md:w-96 modal-left-panel p-6 flex flex-col border-r border-white/10 overflow-y-auto">
+                <div id="modalLeftContent">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 rounded-2xl tech-java flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                        AK
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-xl font-bold text-white">Arun Kasturi</h2>
+                        <p class="text-gray-400">Full Stack Java Developer</p>
+                        <span class="inline-block mt-2 px-3 py-1 bg-blue-500 text-white text-xs rounded-full font-semibold">H1B</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 mb-6">
+                    <div class="modal-info-card rounded-xl p-3">
+                        <span class="text-gray-500 text-xs uppercase">Experience</span>
+                        <p class="text-white font-semibold">10+ Years</p>
+                    </div>
+                    <div class="modal-info-card rounded-xl p-3">
+                        <span class="text-gray-500 text-xs uppercase">Rate</span>
+                        <p class="text-white font-bold text-lg">$75/hr</p>
+                    </div>
+                    <div class="modal-info-card rounded-xl p-3">
+                        <span class="text-gray-500 text-xs uppercase">Current Location</span>
+                        <p class="text-white font-medium text-sm">Charlotte, NC</p>
+                    </div>
+                    <div class="modal-info-card rounded-xl p-3">
+                        <span class="text-gray-500 text-xs uppercase">Relocation</span>
+                        <p class="text-cyan-400 font-medium text-sm">Open to Relocate</p>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <p class="text-gray-400 text-xs uppercase tracking-wider mb-3">Documents</p>
+                    <div class="space-y-2">
+                        <button onclick="showDocument(&#39;resume&#39;)" data-doc="resume" class="doc-tab w-full text-left px-4 py-3 rounded-xl text-white flex items-center gap-3 active">
+                            <span class="text-xl">📄</span>
+                            <span class="font-medium">Resume</span>
+                            <span class="ml-auto text-green-400 text-xs">✓</span>
+                        </button>
+                        <button onclick="showDocument(&#39;visa&#39;)" data-doc="visa" class="doc-tab w-full text-left px-4 py-3 rounded-xl text-white flex items-center gap-3">
+                            <span class="text-xl">🪪</span>
+                            <span class="font-medium">Visa Copy</span>
+                            <span class="ml-auto text-green-400 text-xs">✓</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="border-t border-white/10 pt-6">
+                    <p class="text-white font-semibold mb-2">🤝 Interested in talking to candidate?</p>
+                    <p class="text-gray-400 text-sm mb-4">Please message me here, or feel free to call me<br><strong class="text-purple-400">Imran Khan, 214-396-6721</strong></p>
+                    
+                    <div class="space-y-3">
+                        <input type="text" id="vendorName" placeholder="Your Name *" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 text-sm focus:outline-none">
+                        <input type="email" id="vendorEmail" placeholder="Your Email *" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 text-sm focus:outline-none">
+                        <input type="tel" id="vendorPhone" placeholder="Your Phone" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 text-sm focus:outline-none">
+                        <textarea id="vendorMessage" placeholder="Message (optional)" rows="2" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 text-sm focus:outline-none resize-none"></textarea>
+                        <button onclick="submitInterest(1769463822177)" class="btn-modern w-full py-4 rounded-xl font-semibold text-white">
+                            ✉️ Submit Interest
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Right Panel - Document Viewer -->
+            <div class="flex-1 flex flex-col modal-right-panel">
+                <div class="p-4 border-b border-white/10 flex items-center justify-between bg-black/30">
+                    <span id="docViewerTitle" class="text-white font-semibold">📄 Resume</span>
+                    <button onclick="closeModal()" class="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all border border-white/10">
+                        <span class="text-xl">✕</span>
+                    </button>
+                </div>
+                <div id="docViewer" class="flex-1 flex items-center justify-center"><div class="text-gray-500 text-center p-8"><p class="text-6xl mb-4">📄</p><p>Select a document to view</p></div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============== IMPORT MODAL ============== -->
+    <div id="importModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4 hidden">
+        <div class="glass rounded-3xl max-w-lg w-full p-6" onclick="event.stopPropagation()">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-xl font-bold">📤 Import Data</h2>
+                <button onclick="closeImportModal()" class="w-10 h-10 rounded-full glass hover:bg-white/10 flex items-center justify-center">✕</button>
+            </div>
+            <textarea id="importTextarea" class="w-full h-40 px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none resize-none" placeholder="Paste JSON here..."></textarea>
+            <div class="flex gap-3 mt-4">
+                <button onclick="processImport()" class="flex-1 btn-modern py-3 rounded-xl font-medium">✅ Import</button>
+                <button onclick="closeImportModal()" class="flex-1 glass py-3 rounded-xl font-medium hover:bg-white/10">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // =====================================================
+        // DATA
+        // =====================================================
+        const STORAGE_KEY = 'benchCandidatesData_v6.4';
+        
+        const defaultSettings = {
+            companyName: 'Nemo IT Solutions',
+            email: 'imran@nemoitsolutions.com',
+            phone: '214-396-6721'
+        };
+
+const defaultCandidates = [
+       {
+    id: 1769469634904,
+    name: "Arun",
+    role: "Full Stack Java Developer",
+    primaryTech: "Java",
+    pocEmail: "Vasuki@nemoitsolutions.com",      
+    skills: ["Java (8–17)","Spring Boot","Microservices Architecture","REST API Development","React.js","Angular","AWS","Kubernetes","Docker","Apache Kafka","SQL & PL/SQL","CI/CD","GenAI (RAG)"],
+    visa: "H1B",
+    rate: "$70/hr",
+    experience: "10+ Years",
+    currentLocation: "Charlotte, NC",
+    relocation: "Open to Relocate",
+    availability: "Immediate",
+    summary: "Senior Full Stack Java Engineer with enterprise cloud-native experience.",
+    highlight: false,
+    resumeLink: "https://docs.google.com/document/d/10wP2UV2IrV0C4GmoYy5qdrUtUkzspe0l/edit",
+    visaLink: "https://drive.google.com/file/d/17wbWgKGixKpnzvWR0kRCSmSm6Ic_9DRf/view"
+  },
+  {
+    id: 1769530218844,
+    name: "Rajkumar",
+    role: "Lead Full Stack Java",
+    primaryTech: "Java",
+    pocEmail: "Vasuki@nemoitsolutions.com",
+    skills: ["Java","Springboot","Microservices","AWS","Angular","React"],
+    visa: "H1B",
+    rate: "$75/hr",
+    experience: "13+ Years",
+    currentLocation: "Raleigh, NC",
+    relocation: "Local Only",
+    availability: "Immediate",
+    summary: "Experienced Lead Full Stack Java.",
+    highlight: false,
+    resumeLink: "https://docs.google.com/document/d/1RneXb0ZEOZggEkCL7BSsfu0a5UWOZ4l5/edit",
+    visaLink: "https://drive.google.com/file/d/1odt1arjpTFPS77l6Md9jzPgD-SwUZT8N/view"
+  },
+  {
+    id: 1769543179100,
+    name: "Nagarjuna Chalasani",
+    role: "Cognos Architect",
+    primaryTech: "Data/BI",
+    pocEmail: "Vasuki@nemoitsolutions.com",
+    skills: ["Cognos 8.x Suite", "Cognos 10.x Suite", "Cognos 11.1.5, 11.0.5", "Cognos Analytics 11.2.x", "Cognos Report Studio", "Cognos Cube Designer", "Cognos Transformer", "Framework Manager"],
+    visa: "H1B",
+    rate: "$110/hr",
+    experience: "14+ Years",
+    currentLocation: "Plano, TX",
+    relocation: "Remote Only",
+    availability: "Immediate",
+    summary: "Experienced Cognos Architect.",
+    highlight: false,
+    resumeLink: "https://docs.google.com/document/d/1W48txuxVII06pcUoH9i_JcSCFRFB3PaN/edit",
+    visaLink: "https://drive.google.com/file/d/1eqVqirhpie5cWnY6MBxcKfxXG23n-kLu/view"
+  },
+  {
+    id: 1769543246004,
+    name: "Manoj Gogineni",
+    role: "Data Engineer",
+    primaryTech: "Data/BI",
+    pocEmail: "Jay@nemoitsolutions.com",
+    skills: ["Python","Hadoop","Data Analytics","Data Engineering","SQL","Snowflake"],
+    visa: "H1B",
+    rate: "$70/hr",
+    experience: "10+ Years",
+    currentLocation: "Ashburn, VA",
+    relocation: "Open to Relocate",
+    availability: "Immediate",
+    summary: "Experienced Data Engineer.",
+    highlight: false,
+    resumeLink: "https://docs.google.com/document/d/18F3kJlRwA4lBuGGroQZLudnVBMCWkoPC/edit",
+    visaLink: "https://drive.google.com/file/d/1YycOaCQFAeSHr1KvuXQqbSOuZl2lQf29/view"
+  },
+  {
+    id: 1769543314973,
+    name: "Sphoorthy Gundala",
+    role: "DevOps Engineer",
+    primaryTech: "DevOps",
+    pocEmail: "Ramkishore@nemoitsolutions.com",
+    skills: ["AWS","Azure","Terraform","Kubernetes","GCP"],
+    visa: "H4 EAD",
+    rate: "$65/hr",
+    experience: "8+ Years",
+    currentLocation: "Austin, TX",
+    relocation: "Local Only",
+    availability: "Immediate",
+    summary: "Experienced DevOps Engineer.",
+    highlight: false,
+    resumeLink: "https://docs.google.com/document/d/1RGdRc8zFAsl0kLA2PeKhKxE4FWKc4e1D/edit",
+    visaLink: "https://drive.google.com/file/d/14VWAXkYGdmIJVLFdIO7DRLoB6gJcwRRU/view"
+  },
+  {
+    id: 1769543365844,
+    name: "Harish Anumolu",
+    role: "DevOps Engineer",
+    primaryTech: "DevOps",
+    pocEmail: "Bhavya@nemoitsolutions.com",
+    skills: ["AWS", "Azure" , "CI/CD" , "Kubernetes", "Docker", "Terraform"],
+    visa: "H1B",
+    rate: "$75/hr",
+    experience: "9+ Years",
+    currentLocation: "Houston, TX",
+    relocation: "Remote Only",
+    availability: "Immediate",
+    summary: "Experienced DevOps Engineer.",
+    highlight: false,
+    resumeLink: "https://docs.google.com/document/d/1ax2DwaV_0l1F9XeB5auTt4fQ04RVaMSb/edit",
+    visaLink: "https://drive.google.com/file/d/1RP4QxgR86mo6fK9JOseBEhAEejW72HMa/view"
+  },
+  {
+    id: 1769543428935,
+    name: "Uday Kumar Yellanki",
+    role: "DevOps / Infrastructure Engineer",
+    primaryTech: "DevOps",
+    pocEmail: "Ramkishore@nemoitsolutions.com",
+    skills: ["SRE","Infrastructure","AWS","Cloud"],
+    visa: "H1B",
+    rate: "$75/hr",
+    experience: "10+ Years",
+    currentLocation: "San Antonio, TX",
+    relocation: "Open to Relocate",
+    availability: "Immediate",
+    summary: "Experienced DevOps / Infrastructure Engineer.",
+    highlight: false,
+    resumeLink: "https://docs.google.com/document/d/1V-CFfcWMgx0XKyzaj5ZyuJxMARx8eQ2O/edit",
+    visaLink: "https://drive.google.com/file/d/1oJihiQPhaVfWG7ldcAfxct8_6cziC2p4/view"
+  },
+  {
+    id: 1769543485891,
+    name: "Venkata Naga Sandeep Mamidi",
+    role: ".NET Full Stack Developer",
+    primaryTech: ".NET",
+    pocEmail: "Jay@nemoitsolutions.com",
+    skills: [".NET","C#","MVC","Angular","React"],
+    visa: "H1B Transfer",
+    rate: "$70/hr",
+    experience: "9+ Years",
+    currentLocation: "Houston, TX",
+    relocation: "Open to Relocate",
+    availability: "Immediate",
+    summary: "Experienced .NET Full Stack Developer.",
+    highlight: false,
+    resumeLink: "https://docs.google.com/document/d/1Av-7wRnR0tu2L4bb52gV0KEvfkEoAQO4/edit",
+    visaLink: "https://drive.google.com/file/d/1z6gB-9B2iNLo4MFj-B1iDJJTsHyRaMpA/view"
+  },
+  {
+    id: 1769543551167,
+    name: "Aparna Pati",
+    role: ".NET Full Stack w/ AI",
+    primaryTech: ".NET",
+    pocEmail: "Vasuki@nemoitsolutions.com",
+    skills: [".NET","Angular","React","C#","AWS","AI"],
+    visa: "H1B Transfer",
+    rate: "$70/hr",
+    experience: "11+ Years",
+    currentLocation: "Richmond, VA",
+    relocation: "Open to Relocate",
+    availability: "Immediate",
+    summary: "Experienced .NET Full Stack with AI.",
+    highlight: false,
+    resumeLink: "https://docs.google.com/document/d/1-XoJJ6avNDfHjvnxp4MrM2p-R20qm8Ic/edit",
+    visaLink: "https://drive.google.com/file/d/1olWTJNCQ2YBjKv44Yv44JcFli07rXKTW/view"
+  },
+   {
+  id: 1769543618709,
+  name: "Saitej MERUGU",
+  role: "Lead .NET Developer",
+  primaryTech: ".NET",
+  pocEmail: "Bhavya@nemoitsolutions.com",  
+  skills: ["C#","MVC","Angular","AWS","Azure"],
+  visa: "H1B",
+  rate: "$70/hr",
+  experience: "9+ Years",
+  currentLocation: "Detroit, MI",
+  relocation: "Remote Only",
+  availability: "Immediate",
+  summary: "Experienced Lead .NET Developer",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/18Xca8xEwLo9wvbKlSSOjt2Q4_MUBGI1d/edit",
+  visaLink: "https://drive.google.com/file/d/1Hi1LlYH1DqJbQ539OG_8yGS9_QfwNCEG/view"
+},
+{
+  id: 1769543753780,
+  name: "Sahithi KOTHA",
+  role: "Lead Java Engineer",
+  primaryTech: "Java",
+  pocEmail: "Vasuki@nemoitsolutions.com",
+  skills: ["Java","Spring Boot","Microservices"],
+  visa: "H1B Transfer",
+  rate: "$75/hr",
+  experience: "11+ Years",
+  currentLocation: "Snohomish, WA",
+  relocation: "Open to Relocate",
+  availability: "Immediate",
+  summary: "Experienced Lead Java Engineer",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/1JW3JC7dxVWBOxS6q8lKDMZ-HTNSzMdlW/edit",
+  visaLink: "https://drive.google.com/file/d/1vLs3td6t91t8uD7kdcaDm_47v1zcWp_C/view"
+},
+{
+  id: 1769543806248,
+  name: "Surya Das",
+  role: "Lead Java Developer",
+  primaryTech: "Java",
+  pocEmail: "Jay@nemoitsolutions.com",
+  skills: ["Java","Spring Boot","Microservices","AWS"],
+  visa: "H1B Transfer",
+  rate: "$80/hr",
+  experience: "18+ Years",
+  currentLocation: "Aurora, IL",
+  relocation: "Open to Relocate",
+  availability: "Immediate",
+  summary: "Experienced Lead Java Developer",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/1Vf2KnPur2JZYhE6-Uo_IcLE70m3wJc75/edit",
+  visaLink: "https://drive.google.com/file/d/1ZPRRRfgyfY1diLK7iFWScvpLFL36b8h7/view"
+},
+{
+  id: 1769543859143,
+  name: "Vikram Shivaprakash",
+  role: "Senior Java Full Stack Developer",
+  primaryTech: "Java",
+  pocEmail: "Bhavya@nemoitsolutions.com",
+  skills: ["Java","Angular","Full Stack","AWS"],
+  visa: "H1B Transfer",
+  rate: "$75/hr",
+  experience: "9+ Years",
+  currentLocation: "Redmond, WA",
+  relocation: "Open to Relocate",
+  availability: "Immediate",
+  summary: "Experienced Senior Java Full Stack Developer",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/18InXtUCnaVu936I_P9ydqahpUfsO638b/edit",
+  visaLink: "https://drive.google.com/file/d/1YJAvbxWay-Lq-XlObmVwZdh0I8AY4Fqy/view"
+},
+{
+  id: 1769543917094,
+  name: "Susritha Mylavarapu",
+  role: "JAVA Full Stack Developer",
+  primaryTech: "Java",
+  pocEmail: "Bhavani@nemoitsolutions.com",
+  skills: ["Java","React","AWS","Azure"],
+  visa: "OPT",
+  rate: "$60/hr",
+  experience: "8+ Years",
+  currentLocation: "Denver, CO",
+  relocation: "Open to Relocate",
+  availability: "Immediate",
+  summary: "Experienced JAVA Full Stack Developer",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/1Z97_EiQc7pXIMeJ4nMmPtqbKzQ8kGWfI/edit",
+  visaLink: "https://drive.google.com/file/d/1fll6_7ErjORwKemmo7qKMioQBFqRptz6/view"
+},
+{
+  id: 1769543979357,
+  name: "Kannappan Aravind RAGHAVAN",
+  role: "JAVA Full Stack Developer",
+  primaryTech: "Java",
+  pocEmail: "Bala@nemoitsolutions.com",
+  skills: ["Java","AWS","Angular","React"],
+  visa: "OPT",
+  rate: "$55/hr",
+  experience: "7+ Years",
+  currentLocation: "Monroe, NJ",
+  relocation: "Open to Relocate",
+  availability: "Immediate",
+  summary: "Experienced JAVA Full Stack Developer",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/1ePiKD7scaK6615vyRbY8PrRjjUIfdiWQ/edit",
+  visaLink: "https://drive.google.com/file/d/1xYTcHmVXpuNxrk0J_ldoMmcIIirqoqo9/view"
+},
+{
+  id: 1769544030271,
+  name: "Salman SHAIK",
+  role: "JAVA Full Stack Developer",
+  primaryTech: "Java",
+  pocEmail: "Vasuki@nemoitsolutions.com",
+  skills: ["Java","AWS","Microservices","Angular"],
+  visa: "STEM OPT",
+  rate: "$60/hr",
+  experience: "8+ Years",
+  currentLocation: "Springfield, IL",
+  relocation: "Open to Relocate",
+  availability: "Immediate",
+  summary: "Experienced JAVA Full Stack Developer",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/1bSMngZiVNudOc-bAvfytoW1K2LykuQ0n/edit",
+  visaLink: "https://drive.google.com/file/d/1WTyD-eN2ZBDjP1sVtbxuu3YCuRVFCJdJ/view"
+},
+{
+  id: 1769544086664,
+  name: "Srijani Edara",
+  role: "JAVA Full Stack Developer",
+  primaryTech: "Java",
+  pocEmail: "Bhavya@nemoitsolutions.com",
+  skills: ["Java","Microservices","Docker","Kubernetes","Angular"],
+  visa: "OPT",
+  rate: "$55/hr",
+  experience: "7+ Years",
+  currentLocation: "Fremont, CA",
+  relocation: "Open to Relocate",
+  availability: "Immediate",
+  summary: "Experienced JAVA Full Stack Developer",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/1ZHKFO9hXvaPJao-EYrvfXm3hc4AgphUa/edit",
+  visaLink: "https://drive.google.com/file/d/1jzy-B50rujqUZkH__k3t9Gj9pz2SPwsA/view"
+},
+{
+  id: 1769544133683,
+  name: "Jhansi Somireddy",
+  role: "JAVA Full Stack Developer",
+  primaryTech: "Java",
+  pocEmail: "Ramkishore@nemoitsolutions.com",
+  skills: ["Java","Microservices","Angular","React"],
+  visa: "STEM OPT",
+  rate: "$55/hr",
+  experience: "7+ Years",
+  currentLocation: "Columbus, OH",
+  relocation: "Open to Relocate",
+  availability: "Immediate",
+  summary: "Experienced JAVA Full Stack Developer",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/1X6qAd_6rGbcEZvbZ-BlJ-T7zOoMh3gmP/edit",
+  visaLink: "https://drive.google.com/file/d/1bQQNm5qRieRamF8PoRtvsBA-sXg-aoKv/view"
+},
+{
+  id: 1769544179299,
+  name: "Mahesh TATIPALLI",
+  role: "JAVA Full Stack Developer",
+  primaryTech: "Java",
+  pocEmail: "Jay@nemoitsolutions.com",
+  skills: ["Java","AWS","Microservices","React"],
+  visa: "H1B",
+  rate: "$70/hr",
+  experience: "9+ Years",
+  currentLocation: "Malvern, PA",
+  relocation: "Remote Only",
+  availability: "Immediate",
+  summary: "Experienced JAVA Full Stack Developer",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/19torEq4tTV3ILwsjmjfg0aNzoBfEvQsB/edit",
+  visaLink: "https://drive.google.com/file/d/1J3Ny6Eu21zvUEshmd9qo01pFeoVMJwFN/view"
+},
+{
+  id: 1769544240774,
+  name: "Sai Priyanka GURAJADA",
+  role: "Python Fullstack Developer",
+  primaryTech: "Python",
+  pocEmail: "Bhavya@nemoitsolutions.com",
+  skills: ["Python","Django","SQL","AWS","Hadoop"],
+  visa: "H1B",
+  rate: "$75/hr",
+  experience: "11+ Years",
+  currentLocation: "Austin, TX",
+  relocation: "Remote Only",
+  availability: "Immediate",
+  summary: "Experienced Python Fullstack Developer",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/15LSj0sZrv1no4uYD83ACtRV_2DNd5zli/edit",
+  visaLink: "https://drive.google.com/file/d/1YKv7HizEhn030ws8nheDUBBP5Wd3RTvT/view"
+},
+{
+  id: 1769544315127,
+  name: "Sairam Reddy BHOOMIREDDY",
+  role: "SALESFORCE Developer/Admin",
+  primaryTech: "Salesforce",
+  pocEmail: "Vasuki@nemoitsolutions.com",
+  skills: ["Salesforce","APEX","Service Cloud","Workflows"],
+  visa: "H1B",
+  rate: "$70/hr",
+  experience: "11+ Years",
+  currentLocation: "Austin, TX",
+  relocation: "Remote Only",
+  availability: "Immediate",
+  summary: "Experienced Salesforce Developer/Admin",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/1SBoHSGG6o-aFG1g4GjgImjHwQp-fl0uD/edit",
+  visaLink: "https://drive.google.com/file/d/1yPiC8hLe-_jPgWd7hg51TWZTVIdDf2PU/view"
+},
+{
+  id: 1769544370664,
+  name: "Sindhu ALATI",
+  role: "SALESFORCE Developer/Admin",
+  primaryTech: "Salesforce",
+  pocEmail: "Jay@nemoitsolutions.com",
+  skills: ["Service Cloud","Sales Cloud","Marketing Cloud" , "Apex", "LWC"],
+  visa: "H1B",
+  rate: "$75/hr",
+  experience: "9+ Years",
+  currentLocation: "Jacksonville, FL",
+  relocation: "Open to Relocate",
+  availability: "Immediate",
+  summary: "Experienced Salesforce Developer/Admin",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/1WfsOigLjV27Py4khzzFo8pR0vbMiV1aS/edit",
+  visaLink: "https://drive.google.com/file/d/1U2m4D9gBCeMEvwWGvbTDJSWQxdzWp1ls/view"
+},
+{
+  id: 1769544419251,
+  name: "Sandeep DUMPALA",
+  role: "Data Engineer",
+  primaryTech: "Data/BI",
+  pocEmail: "Bhavya@nemoitsolutions.com",
+  skills: ["Snowflake","SQL","Tableau", "power BI", "Data Analytics", "Python"],
+  visa: "H1B",
+  rate: "$70/hr",
+  experience: "8+ Years",
+  currentLocation: "San Jose, CA",
+  relocation: "Open to Relocate",
+  availability: "Immediate",
+  summary: "Experienced Data Engineer",
+  highlight: true,
+  resumeLink: "https://docs.google.com/document/d/18e2IezadwXL-3ULtEAbTiCoLDDYxpo7O/edit",
+  visaLink: "https://drive.google.com/file/d/187CYnqqrSjpZOtkCg6y1Rwu1WfBRnE2N/view"
+},
+{
+  id: 1769544486999,
+  name: "Prasanth Rayapati",
+  role: "SQL/BI",
+  primaryTech: "Data/BI",
+  pocEmail: "Vasuki@nemoitsolutions.com",
+  skills: ["SQL","Power BI","Data Analytics", "SSIS", "SSRS"],
+  visa: "H4 EAD",
+  rate: "$70/hr",
+  experience: "9+ Years",
+  currentLocation: "Nashville, TN",
+  relocation: "Remote Preferred",
+  availability: "Immediate",
+  summary: "Experienced SQL/BI",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/1v6-HcCMa7w5e4gv7UxZnaMLc7DreX_N-/edit",
+  visaLink: "https://drive.google.com/file/d/1y-oq6o7v7jDhrG6UXf3REza_pcsCcVpD/view"
+},
+{
+  id: 1769544539184,
+  name: "Uday Kiran Nayani",
+  role: "JAVA Full Stack Developer",
+  primaryTech: "Java",
+  pocEmail: "Sanjana@nemoitsolutions.com",
+  skills: ["Java","Golang","AWS","Microservices","React","Angular"],
+  visa: "STEM OPT",
+  rate: "$65/hr",
+  experience: "8+ Years",
+  currentLocation: "Columbus, OH",
+  relocation: "Open to Relocate",
+  availability: "Immediate",
+  summary: "Experienced JAVA Full Stack Developer",
+  highlight: true,
+  resumeLink: "https://docs.google.com/document/d/12xkAOtZEGrCWrGntFNKr7-omuvU_b5ZQ/edit",
+  visaLink: "https://drive.google.com/file/d/1ZaTxcP7oWp3WFVahxlac1Uq-jdcNHMb0/view"
+},
+{
+  id: 1769544597102,
+  name: "Deepthi Bandaru",
+  role: "UI Developer",
+  primaryTech: "Angular",
+  pocEmail: "Ramkishore@nemoitsolutions.com",
+  skills: ["Angular","NodeJS","JavaScript", "AWS", "JAVA" , "Microservices"],
+  visa: "H1B Transfer",
+  rate: "$75/hr",
+  experience: "10+ Years",
+  currentLocation: "Dallas, TX",
+  relocation: "Local Only",
+  availability: "Immediate",
+  summary: "Experienced UI Developer",
+  highlight: false,
+  resumeLink: "https://docs.google.com/document/d/1kCZuZsOrl9ohcnZQusHyF9g3MYtXtxoA/edit",
+  visaLink: "https://drive.google.com/file/d/1OHRDIr_3kucaytPWYEt9DuNHjoYfloH-/view"
+}   
+   
+];
+
+
+        const techConfig = {
+            'Java': { icon: '☕', class: 'tech-java' },
+            'Python': { icon: '🐍', class: 'tech-python' },
+            'React': { icon: '⚛️', class: 'tech-react' },
+            '.NET': { icon: '🔷', class: 'tech-dotnet' },
+            'QA/Testing': { icon: '🧪', class: 'tech-qa' },
+            'DevOps': { icon: '🔧', class: 'tech-devops' },
+            'Data/BI': { icon: '📊', class: 'tech-data' },
+            'Salesforce': { icon: '☁️', class: 'tech-data' },
+            'SAP': { icon: '🟦', class: 'tech-data' },
+            'Angular': { icon: '🅰️', class: 'tech-devops' },
+            'AWS': { icon: '🌩️', class: 'tech-python' },
+            'Other': { icon: '💻', class: 'tech-default' }
+        };
+
+        const visaColors = {
+            'Citizen': 'bg-green-500',
+            'GC': 'bg-green-500',
+            'H1B': 'bg-blue-500',
+            'H1B Transfer': 'bg-blue-500',
+            'H4 EAD': 'bg-blue-400',
+            'L1': 'bg-blue-500',
+            'L2 EAD': 'bg-blue-400',
+            'OPT': 'bg-orange-500',
+            'STEM OPT': 'bg-purple-500',
+            'CPT': 'bg-yellow-500',
+            'EB3': 'bg-green-600',
+            'TN': 'bg-blue-500'
+        };
+
+        let settings = { ...defaultSettings };
+        let candidates = [];
+        let searchTerm = '';
+        let currentCandidate = null;
+
+        // =====================================================
+        // INIT
+        // =====================================================
+        function init() {
+            loadData();
+            renderTechFilters();
+            renderCandidates();
+            renderAdminCandidateList();
+            updateSettingsForm();
+            updateContactInfo();
+            setupEventListeners();
+        }
+
+function loadData() {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) {
+        try {
+            const data = JSON.parse(stored);
+            settings = data.settings || { ...defaultSettings };
+            candidates = data.candidates || [...defaultCandidates];
+        } catch (e) {
+            settings = { ...defaultSettings };
+            candidates = [...defaultCandidates];
+        }
+    } else {
+        settings = { ...defaultSettings };
+        candidates = [...defaultCandidates];
+        saveData(); // 👈 ensures first load is shared
+    }
+}
+
+
+        function saveData() {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify({ settings, candidates, lastUpdated: new Date().toISOString() }));
+            document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+        }
+
+        // =====================================================
+        // ADMIN
+        // =====================================================
+        function toggleAdminView() {
+            const adminView = document.getElementById('adminView');
+            const publicView = document.getElementById('publicView');
+            
+            if (adminView.classList.contains('hidden')) {
+                publicView.classList.add('hidden');
+                adminView.classList.remove('hidden');
+                renderAdminCandidateList();
+            } else {
+                adminView.classList.add('hidden');
+                publicView.classList.remove('hidden');
+                renderCandidates();
+                updateContactInfo();
+            }
+        }
+
+        function showPublicView() {
+            document.getElementById('adminView').classList.add('hidden');
+            document.getElementById('publicView').classList.remove('hidden');
+            renderCandidates();
+            updateContactInfo();
+        }
+
+        function updateSettingsForm() {
+            document.getElementById('settingCompanyName').value = settings.companyName || '';
+            document.getElementById('settingEmail').value = settings.email || '';
+            document.getElementById('settingPhone').value = settings.phone || '';
+        }
+
+        function saveSettings() {
+            settings.companyName = document.getElementById('settingCompanyName').value || defaultSettings.companyName;
+            settings.email = document.getElementById('settingEmail').value || defaultSettings.email;
+            settings.phone = document.getElementById('settingPhone').value || defaultSettings.phone;
+            saveData();
+            updateContactInfo();
+            alert('✅ Settings saved!');
+        }
+
+        function updateContactInfo() {
+            const ctaEmail = document.getElementById('ctaEmail');
+            if (ctaEmail) {
+                ctaEmail.href = `mailto:${settings.email}`;
+            }
+            document.getElementById('ctaPhone').href = `tel:${settings.phone.replace(/\D/g, '')}`;
+            document.getElementById('ctaPhone').innerHTML = `<span>📞</span> ${settings.phone}`;
+            document.getElementById('footerCompany').textContent = settings.companyName;
+        }
+
+        // =====================================================
+        // CRUD
+        // =====================================================
+        function saveCandidate() {
+            const name = document.getElementById('candName').value.trim();
+            const role = document.getElementById('candRole').value.trim();
+            const primaryTech = document.getElementById('candPrimaryTech').value;
+            const skillsRaw = document.getElementById('candSkills').value.trim();
+            const visa = document.getElementById('candVisa').value;
+            const rate = document.getElementById('candRate').value.trim();
+            const experience = document.getElementById('candExperience').value.trim();
+            const currentLocation = document.getElementById('candLocation').value.trim() || 'Open to Relocate';
+            const relocation = document.getElementById('candRelocation').value;
+            const availability = document.getElementById('candAvailability').value;
+            const summary = document.getElementById('candSummary').value.trim();
+            const highlight = document.getElementById('candHighlight').checked;
+            const resumeLink = document.getElementById('candResumeLink').value.trim();
+            const visaLink = document.getElementById('candVisaLink').value.trim();
+            const editingId = document.getElementById('editingId').value;
+
+            if (!name || !role || !skillsRaw || !rate || !experience || !resumeLink) {
+                alert('Please fill all required fields');
+                return;
+            }
+
+            const skills = skillsRaw.split(',').map(s => s.trim()).filter(s => s);
+            const data = { name, role, primaryTech, skills, visa, rate, experience, currentLocation, relocation, availability, summary: summary || `Experienced ${role}`, highlight, resumeLink, visaLink };
+
+            if (editingId) {
+                const idx = candidates.findIndex(c => c.id === parseInt(editingId));
+                if (idx !== -1) candidates[idx] = { ...candidates[idx], ...data };
+            } else {
+                data.id = Date.now();
+                candidates.push(data);
+            }
+
+            saveData();
+            clearForm();
+            renderAdminCandidateList();
+            renderTechFilters();
+            renderCandidates();
+            alert(editingId ? '✅ Updated!' : '✅ Added!');
+        }
+
+        function editCandidate(id) {
+            const c = candidates.find(x => x.id === id);
+            if (!c) return;
+            document.getElementById('editingId').value = c.id;
+            document.getElementById('formTitle').textContent = '✏️ Edit Candidate';
+            document.getElementById('candName').value = c.name;
+            document.getElementById('candRole').value = c.role;
+            document.getElementById('candPrimaryTech').value = c.primaryTech;
+            document.getElementById('candSkills').value = c.skills.join(', ');
+            document.getElementById('candVisa').value = c.visa;
+            document.getElementById('candRate').value = c.rate;
+            document.getElementById('candExperience').value = c.experience;
+            document.getElementById('candLocation').value = c.currentLocation || c.location || '';
+            document.getElementById('candRelocation').value = c.relocation || 'Open to Relocate';
+            document.getElementById('candAvailability').value = c.availability;
+            document.getElementById('candSummary').value = c.summary || '';
+            document.getElementById('candHighlight').checked = c.highlight;
+            document.getElementById('candResumeLink').value = c.resumeLink || '';
+            document.getElementById('candVisaLink').value = c.visaLink || '';
+            document.getElementById('formTitle').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function deleteCandidate(id) {
+            if (!confirm('Delete this candidate?')) return;
+            candidates = candidates.filter(c => c.id !== id);
+            saveData();
+            renderAdminCandidateList();
+            renderTechFilters();
+            renderCandidates();
+        }
+
+        function deleteAllCandidates() {
+            if (!confirm('Delete ALL candidates?')) return;
+            candidates = [];
+            saveData();
+            renderAdminCandidateList();
+            renderTechFilters();
+            renderCandidates();
+        }
+
+        function clearForm() {
+            document.getElementById('editingId').value = '';
+            document.getElementById('formTitle').textContent = '➕ Add New Candidate';
+            ['candName', 'candRole', 'candSkills', 'candRate', 'candExperience', 'candLocation', 'candSummary', 'candResumeLink', 'candVisaLink'].forEach(id => document.getElementById(id).value = '');
+            document.getElementById('candPrimaryTech').value = 'Java';
+            document.getElementById('candVisa').value = 'H1B';
+            document.getElementById('candAvailability').value = 'Immediate';
+            document.getElementById('candRelocation').value = 'Open to Relocate';
+            document.getElementById('candHighlight').checked = false;
+        }
+
+        // =====================================================
+        // DOCUMENTS
+        // =====================================================
+        function getGoogleDriveEmbedUrl(url) {
+            if (!url) return null;
+
+            // Google Docs
+            if (url.includes('docs.google.com')) {
+            return url.replace('/edit', '/preview');
+        }
+
+    // Google Drive files
+    const match = url.match(/\/d\/([a-zA-Z0-9_-]+)/);
+    return match ? `https://drive.google.com/file/d/${match[1]}/preview` : url;
+}
+
+
+        function showDocument(type) {
+            if (!currentCandidate) return;
+            document.querySelectorAll('.doc-tab').forEach(t => t.classList.remove('active'));
+            document.querySelector(`.doc-tab[data-doc="${type}"]`)?.classList.add('active');
+
+            const url = getGoogleDriveEmbedUrl(type === 'resume' ? currentCandidate.resumeLink : currentCandidate.visaLink);
+            const title = type === 'resume' ? '📄 Resume' : '🪪 Visa Copy';
+            document.getElementById('docViewerTitle').textContent = title;
+
+            document.getElementById('docViewer').innerHTML = url 
+                ? `<iframe src="${url}" class="w-full h-full border-0"></iframe>`
+                : `<div class="text-gray-500 text-center p-8"><p class="text-6xl mb-4">📭</p><p>Not available</p></div>`;
+        }
+
+        // =====================================================
+        // INTEREST FORM
+        // =====================================================
+        function submitInterest(id) {
+            const c = candidates.find(x => x.id === id);
+            if (!c) return;
+
+            const name = document.getElementById('vendorName').value.trim();
+            const email = document.getElementById('vendorEmail').value.trim();
+            const phone = document.getElementById('vendorPhone').value.trim();
+            const msg = document.getElementById('vendorMessage').value.trim();
+
+            if (!name || !email) {
+                alert('Please enter your name and email');
+                return;
+            }
+
+            const subject = `Interest: ${c.name} - ${c.role}`;
+            const body = `Hi,
+
+A vendor is interested in your candidate.
+
+=== VENDOR ===
+Name: ${name}
+Email: ${email}
+Phone: ${phone || 'N/A'}
+Message: ${msg || 'N/A'}
+
+=== CANDIDATE ===
+Name: ${c.name}
+Role: ${c.role}
+Tech: ${c.primaryTech}
+Visa: ${c.visa}
+Rate: ${c.rate}
+
+---
+Sent from Talent Portal`;
+
+            const pocEmail = c.pocEmail || settings.email;
+
+window.location.href =
+  `mailto:${pocEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            alert('✅ Thanks! Your email client should open now.');
+        }
+
+        // =====================================================
+        // IMPORT/EXPORT
+        // =====================================================
+        function exportData() {
+            const blob = new Blob([JSON.stringify({ settings, candidates }, null, 2)], { type: 'application/json' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = `bench-${new Date().toISOString().split('T')[0]}.json`;
+            a.click();
+        }
+
+        function importData() {
+            document.getElementById('importModal').classList.remove('hidden');
+        }
+
+        function closeImportModal() {
+            document.getElementById('importModal').classList.add('hidden');
+            document.getElementById('importTextarea').value = '';
+        }
+
+        function processImport() {
+            try {
+                const data = JSON.parse(document.getElementById('importTextarea').value.trim());
+                if (data.settings) settings = data.settings;
+                if (data.candidates) candidates = data.candidates;
+                saveData();
+                updateSettingsForm();
+                renderAdminCandidateList();
+                renderTechFilters();
+                renderCandidates();
+                closeImportModal();
+                alert('✅ Imported!');
+            } catch (e) {
+                alert('❌ Invalid JSON');
+            }
+        }
+
+        // =====================================================
+        // RENDER - ADMIN
+        // =====================================================
+        function renderAdminCandidateList() {
+            const container = document.getElementById('adminCandidateList');
+            document.getElementById('adminCandidateCount').textContent = candidates.length;
+
+            if (!candidates.length) {
+                container.classList.add('hidden');
+                document.getElementById('noCandidates').classList.remove('hidden');
+                return;
+            }
+
+            container.classList.remove('hidden');
+            document.getElementById('noCandidates').classList.add('hidden');
+
+            container.innerHTML = candidates.map(c => {
+                const tech = techConfig[c.primaryTech] || techConfig['Other'];
+                return `
+                    <div class="glass-card flex items-center gap-4 p-4 rounded-xl">
+                        <div class="w-12 h-12 rounded-full ${tech.class} flex items-center justify-center text-white font-bold flex-shrink-0">
+                            ${getInitials(c.name)}
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2">
+                                <h3 class="text-white font-semibold truncate">${c.name}</h3>
+                                ${c.highlight ? '<span class="text-yellow-400">⭐</span>' : ''}
+                            </div>
+                            <p class="text-gray-400 text-sm">${c.role} • ${c.rate}</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="editCandidate(${c.id})" class="p-2 glass rounded-lg hover:bg-white/10">✏️</button>
+                            <button onclick="deleteCandidate(${c.id})" class="p-2 glass rounded-lg hover:bg-red-500/30">🗑️</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // =====================================================
+        // RENDER - PUBLIC
+        // =====================================================
+        function renderTechFilters() {
+            // Tech filters removed - function kept for compatibility
+        }
+
+        function setTechFilter(tech) {
+            // Tech filters removed
+            renderCandidates();
+        }
+
+        function clearFilters() {
+            searchTerm = '';
+            document.getElementById('searchInput').value = '';
+            renderCandidates();
+        }
+
+        function getFilteredCandidates() {
+            return candidates.filter(c => {
+                const term = searchTerm.toLowerCase();
+                const matchSearch = !term || 
+                    c.role.toLowerCase().includes(term) || 
+                    c.skills.some(s => s.toLowerCase().includes(term));
+                return matchSearch;
+            });
+        }
+
+        function getInitials(name) {
+            return name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
+        }
+
+        function renderCandidates() {
+            const filtered = getFilteredCandidates();
+            document.getElementById('candidateCount').textContent = `${filtered.length} Available`;
+
+            if (!filtered.length) {
+                document.getElementById('candidateGrid').classList.add('hidden');
+                document.getElementById('noResults').classList.remove('hidden');
+                return;
+            }
+
+            document.getElementById('candidateGrid').classList.remove('hidden');
+            document.getElementById('noResults').classList.add('hidden');
+
+            document.getElementById('candidateGrid').innerHTML = filtered.map(c => {
+                const tech = techConfig[c.primaryTech] || techConfig['Other'];
+                const visa = visaColors[c.visa] || 'bg-gray-500';
+                return `
+                    <div onclick="openModal(${c.id})" class="glass-card rounded-3xl p-6 cursor-pointer relative">
+                        <!-- Visa Badge - Top Right -->
+                        <div class="absolute top-4 right-4">
+                            <span class="px-3 py-1.5 rounded-full ${visa} text-white text-xs font-semibold shadow-lg">${c.visa}</span>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-16 h-16 rounded-2xl ${tech.class} flex items-center justify-center text-white font-bold text-xl">
+                                ${getInitials(c.name)}
+                            </div>
+                            <div class="flex-1 min-w-0 pr-16">
+                                <h3 class="text-white font-bold text-lg truncate">${c.name}</h3>
+                                <p class="text-gray-400">${c.role}</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            ${c.skills.slice(0, 4).map(s => `<span class="pill px-3 py-1 rounded-full text-gray-300 text-xs">${s}</span>`).join('')}
+                            ${c.skills.length > 4 ? `<span class="pill px-3 py-1 rounded-full text-gray-400 text-xs">+${c.skills.length - 4}</span>` : ''}
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 text-sm mb-4">
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Experience</span>
+                                <span class="text-white font-semibold">${c.experience}</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Rate</span>
+                                <span class="text-white font-bold text-lg">${c.rate}</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Current Location</span>
+                                <span class="text-gray-300 text-sm">${c.currentLocation || c.location || 'N/A'}</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block text-xs uppercase tracking-wide">Relocation</span>
+                                <span class="text-cyan-400 text-sm">${c.relocation || 'Open to Relocate'}</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-white/10 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 bg-green-400 rounded-full pulse-dot"></span>
+                                <span class="text-green-400 text-sm font-medium">${c.availability}</span>
+                            </div>
+                            <button class="btn-modern px-5 py-2 rounded-xl text-sm font-semibold text-white">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function openModal(id) {
+            const c = candidates.find(x => x.id === id);
+            if (!c) return;
+            currentCandidate = c;
+
+            const tech = techConfig[c.primaryTech] || techConfig['Other'];
+            const visa = visaColors[c.visa] || 'bg-gray-500';
+
+            document.getElementById('modalLeftContent').innerHTML = `
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 rounded-2xl ${tech.class} flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                        ${getInitials(c.name)}
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-xl font-bold text-white">${c.name}</h2>
+                        <p class="text-gray-400">${c.role}</p>
+                        <span class="inline-block mt-2 px-3 py-1 ${visa} text-white text-xs rounded-full font-semibold">${c.visa}</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 mb-6">
+                    <div class="modal-info-card rounded-xl p-3">
+                        <span class="text-gray-500 text-xs uppercase">Experience</span>
+                        <p class="text-white font-semibold">${c.experience}</p>
+                    </div>
+                    <div class="modal-info-card rounded-xl p-3">
+                        <span class="text-gray-500 text-xs uppercase">Rate</span>
+                        <p class="text-white font-bold text-lg">${c.rate}</p>
+                    </div>
+                    <div class="modal-info-card rounded-xl p-3">
+                        <span class="text-gray-500 text-xs uppercase">Current Location</span>
+                        <p class="text-white font-medium text-sm">${c.currentLocation || c.location || 'N/A'}</p>
+                    </div>
+                    <div class="modal-info-card rounded-xl p-3">
+                        <span class="text-gray-500 text-xs uppercase">Relocation</span>
+                        <p class="text-cyan-400 font-medium text-sm">${c.relocation || 'Open to Relocate'}</p>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <p class="text-gray-400 text-xs uppercase tracking-wider mb-3">Documents</p>
+                    <div class="space-y-2">
+                        <button onclick="showDocument('resume')" data-doc="resume" class="doc-tab active w-full text-left px-4 py-3 rounded-xl text-white flex items-center gap-3">
+                            <span class="text-xl">📄</span>
+                            <span class="font-medium">Resume</span>
+                            ${c.resumeLink ? '<span class="ml-auto text-green-400 text-xs">✓</span>' : '<span class="ml-auto text-gray-500 text-xs">N/A</span>'}
+                        </button>
+                        <button onclick="showDocument('visa')" data-doc="visa" class="doc-tab w-full text-left px-4 py-3 rounded-xl text-white flex items-center gap-3">
+                            <span class="text-xl">🪪</span>
+                            <span class="font-medium">Visa Copy</span>
+                            ${c.visaLink ? '<span class="ml-auto text-green-400 text-xs">✓</span>' : '<span class="ml-auto text-gray-500 text-xs">N/A</span>'}
+                        </button>
+                    </div>
+                </div>
+
+                <div class="border-t border-white/10 pt-6">
+                    <p class="text-white font-semibold mb-2">🤝 Interested in talking to candidate?</p>
+                    <p class="text-gray-400 text-sm mb-4">Please message me here, or feel free to call me<br><strong class="text-purple-400">Imran Khan, 214-396-6721</strong></p>
+                    
+                    <div class="space-y-3">
+                        <input type="text" id="vendorName" placeholder="Your Name *" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 text-sm focus:outline-none">
+                        <input type="email" id="vendorEmail" placeholder="Your Email *" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 text-sm focus:outline-none">
+                        <input type="tel" id="vendorPhone" placeholder="Your Phone" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 text-sm focus:outline-none">
+                        <textarea id="vendorMessage" placeholder="Message (optional)" rows="2" class="input-modern w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 text-sm focus:outline-none resize-none"></textarea>
+                        <button onclick="submitInterest(${c.id})" class="btn-modern w-full py-4 rounded-xl font-semibold text-white">
+                            ✉️ Submit Interest
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('modal').classList.remove('hidden');
+            showDocument('resume');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+            currentCandidate = null;
+            document.getElementById('docViewer').innerHTML = `<div class="text-gray-500 text-center p-8"><p class="text-6xl mb-4">📄</p><p>Select a document to view</p></div>`;
+        }
+
+        // =====================================================
+        // EVENTS
+        // =====================================================
+        function setupEventListeners() {
+        document.getElementById('searchInput').addEventListener('input', e => {
+        searchTerm = e.target.value;
+        renderCandidates();
+    });
+
+        document.getElementById('modal').addEventListener('click', e => {
+        if (e.target.id === 'modal') closeModal();
+    });
+
+        document.getElementById('importModal').addEventListener('click', e => {
+        if (e.target.id === 'importModal') closeImportModal();
+    });
+
+        document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+            closeModal();
+            closeImportModal();
+        }
+
+        if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'm') {
+            e.preventDefault();
+            toggleAdminView();
+        }
+    });
+}
+
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+
+
+
+<script async id="netlify-rum-container" src="/.netlify/scripts/rum" data-netlify-rum-site-id="e3932e23-101a-4a3d-bc7a-b32d31456d77" data-netlify-deploy-branch="main" data-netlify-deploy-context="production" data-netlify-cwv-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaXRlX2lkIjoiZTM5MzJlMjMtMTAxYS00YTNkLWJjN2EtYjMyZDMxNDU2ZDc3IiwiYWNjb3VudF9pZCI6IjY5NzhlZTgyMDA4N2FlMDBkMGI1MmIzNiIsImRlcGxveV9pZCI6IjY5N2E3MmY5OTNmNmJkMDAwOGRiMTgyOCIsImlzc3VlciI6Im5mc2VydmVyIn0.3KuexF9vuP4zdFFNmq5qZevgWMbyQxFxgs2yqJTZvAc"></script></body></html>
